@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="program_functions.js"></script>
+    <title>Program Managers</title>
+  </head>
+  <body>
+    <div class="prog-container">
+      <h4>Add New Budget</h2>
+      <div class="prog-inputs">
+        <label for="client_name">Client Name</label>
+        <input type="text" name="client_name" id="client_name" placeholder="Type Here">
+        <label for="prog_name">Project Name</label>
+        <input type="text" name="prog_name" id="prog_name" placeholder="Type Here">
+        <label for="budget">Budget</label>
+        <input type="text" name="budget" id="budget" placeholder="Type Here">
+        <div class="add-buttons">
+          <input type="button" value="Add" onclick="add_budget()">
+          <input type="button" value="Clear" onclick="clear_form()">
+        </div>
+        <br>
+        <a id="fin_back" href="index.html">Back</a>
+      </div>
+    </div>
+  </body>
+</html>
