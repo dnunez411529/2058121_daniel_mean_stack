@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cart Management</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+    <script type="module" src="item.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+      integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="container-fluid main">
+      <!-- Top Container -->
+      <h1>Shopping Cart</h1>
+      <div class="sub-container">
+        <h4>Cart Size: <span id="cart-size">0</span></h4>
+        <h4>
+          <button
+            type="button"
+            class="btn btn-light"
+            style="font-size: 1.5rem"
+            onclick="location.href='checkout.html'"
+          >
+            Checkout
+          </button>
+        </h4>
+      </div>
+      <!-- Shopping Items -->
+      <div class="item-container">
+        <div class="continaer grid-container">
+          <div class="card grid-item">
+            <img
+              src="https://van-noor.com/wp-content/uploads/2019/06/IMG_0034.jpg"
+              alt="tee photo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">T-Shirt</h5>
+              <p>Price: $10,000</p>
+              <p class="card-text">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="addCart('T-Shirt', 10000)"
+                >
+                  Add to cart
+                </button>
+              </p>
+            </div>
+          </div>
+          <div class="card grid-item">
+            <img
+              src="https://pngstick.com/imgs/straw-png/Bent-Drinking-Straw-PNG-Images-PSDs-for-Download-.jpg"
+              alt="straw photo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Straw</h5>
+              <p>Price: $0.50</p>
+              <p class="card-text">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="addCart('Straw', .50)"
+                >
+                  Add to cart
+                </button>
+              </p>
+            </div>
+          </div>
+          <div class="card grid-item">
+            <img
+              src="https://www.staples-3p.com/s7/is/image/Staples/sp41688274_sc7?wid=512&hei=512"
+              alt="cup photo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Cup</h5>
+              <p>Price: $10</p>
+              <p class="card-text">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="addCart('Cup', 10)"
+                >
+                  Add to cart
+                </button>
+              </p>
+            </div>
+          </div>
+          <div class="card grid-item">
+            <img
+              src="https://procure-net.com/wp-content/uploads/2020/11/nitrile_gloves.jpg"
+              alt="glove photo"
+            />
+            <div class="card-body">
+              <h5 class="card-title">Gloves</h5>
+              <p>Price: $1</p>
+              <p class="card-text">
+                <button
+                  type="button"
+                  class="btn btn-primary"
+                  onclick="addCart('Gloves', 1)"
+                >
+                  Add to cart
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
