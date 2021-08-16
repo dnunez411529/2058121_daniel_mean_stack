@@ -1,0 +1,149 @@
+<div class="main">
+  <div class="main-container">
+    <div *ngIf="regiCheck" class="register-main">
+      <div class="register-container">
+        <h2>Registration Form</h2>
+        <br />
+        <form #regiRef="ngForm" (ngSubmit)="register(regiRef)">
+          <div class="form-group">
+            <label for="fName">First Name</label>
+            <input
+              type="text"
+              id="fName"
+              class="form-control"
+              name="fName"
+              ngModel
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="lName">Last Name</label>
+            <input
+              type="text"
+              id="lName"
+              class="form-control"
+              name="lName"
+              ngModel
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="userName">Username</label>
+            <input
+              type="text"
+              id="userName"
+              class="form-control"
+              name="userName"
+              ngModel
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              type="password"
+              id="password"
+              class="form-control"
+              name="password"
+              ngModel
+              required
+            />
+          </div>
+          <br />
+          <div class="btn-container">
+            <button class="btn btn-primary" type="submit">Register</button>
+            <button class="btn btn-secondary" type="reset">Reset</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div *ngIf="loginCheck" class="login-main">
+      <div class="login-container">
+        <h2>Login Form</h2>
+        <br />
+        <form #loginRef="ngForm" (ngSubmit)="login(loginRef)">
+          <div class="form-group">
+            <label for="userName">Username</label>
+            <input
+              id="userName"
+              type="text"
+              class="form-control"
+              name="userName"
+              ngModel
+              required
+            />
+          </div>
+          <br />
+          <div class="form-group">
+            <label for="passWord">Password</label>
+            <input
+              id="passWord"
+              type="password"
+              class="form-control"
+              name="passWord"
+              ngModel
+              required
+            />
+          </div>
+          <br />
+          <div class="btn-container">
+            <button class="btn btn-primary" type="submit">Login</button>
+            <button class="btn btn-secondary" (click)="hide('login')">
+              Sign Up
+            </button>
+          </div>
+          <div class="error">
+            <p>{{ msg }}</p>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div *ngIf="portCheck" class="portfolio-main">
+      <div class="portfolio-container">
+        <h2>My Portfolio</h2>
+        <br />
+        <h5>Welcome {{ userName }}</h5>
+        <br />
+        <form #portRef="ngForm" (ngSubmit)="add(portRef)">
+          <div class="form-group">
+            <label for="contName">Contact Name</label>
+            <input
+              id="contName"
+              type="text"
+              class="form-control"
+              name="contName"
+              ngModel
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="phoneNo">Phone No.</label>
+            <input
+              id="phoneNo"
+              type="text"
+              class="form-control"
+              name="phoneNo"
+              ngModel
+              required
+            />
+          </div>
+          <br />
+          <button class="btn btn-primary" type="submit">Add</button>
+          <br />
+        </form>
+        <div>
+          <table>
+            <tr>
+              <th>Name</th>
+              <th>Phone No.</th>
+            </tr>
+            <tr *ngFor="let i of portArr">
+              <td>{{ i.name }}</td>
+              <td>{{ i.number }}</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

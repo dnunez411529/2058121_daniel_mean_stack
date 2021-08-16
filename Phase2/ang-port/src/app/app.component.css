@@ -1,0 +1,40 @@
+.main-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  background-color: black;
+  width: fit-content;
+  color: white;
+  padding: 30px 70px;
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+.btn-container {
+  display: flex;
+  justify-content: space-between;
+}
+.error {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 20px;
+  color: red;
+}
+table {
+  margin-top: 20px;
+  border: 1px solid white;
+  background-color: grey;
+  color: yellow;
+}
+
+td,
+tr,
+th {
+  width: 130px;
+  padding-left: 10px;
+}
+td {
+  color: white;
+  background-color: #3579b5;
+}
