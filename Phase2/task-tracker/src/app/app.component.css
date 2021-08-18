@@ -1,0 +1,72 @@
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgb(209, 209, 209);
+  height: 100%;
+}
+.header {
+  text-align: center;
+}
+
+.content {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo-container {
+  width: 620px;
+}
+
+.task-table {
+  width: 100%;
+}
+
+.mat-row .mat-cell {
+  border-bottom: 1px solid transparent;
+  border-top: 1px solid transparent;
+  cursor: pointer;
+}
+
+mat-row,
+mat-header-row,
+mat-footer-row {
+  justify-content: space-between;
+}
+
+.mat-row:hover .mat-cell {
+  border-color: currentColor;
+}
+
+.mat-column-id {
+  width: 32px;
+  border-right: 1px solid currentColor;
+  /* padding-right: 24px; */
+  text-align: center;
+}
+
+.mat-column-name {
+  padding-left: 16px;
+  font-size: 16px;
+}
+
+.mat-column-task {
+  /* padding-left: 16px; */
+  font-size: 16px;
+}
+
+.mat-column-dl {
+  padding-left: 16px;
+  font-size: 12spx;
+  font-style: italic;
+}
+
+th {
+  padding-right: 50px;
+}
