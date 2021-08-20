@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  justify-content: center;
+  background-color: aliceblue;
+}
+.main {
+}
+
+label {
+  display: inline-block;
+  width: 600px;
+}

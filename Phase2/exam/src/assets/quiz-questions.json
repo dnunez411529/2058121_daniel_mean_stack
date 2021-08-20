@@ -1,0 +1,52 @@
+[
+  {
+    "question": "Which company did Valve cooperate with in the creation of the Vive?",
+    "correct_answer": "HTC",
+    "incorrect_answers": ["Oculus", "Google", "Razer"]
+  },
+  {
+    "question": "How many colors are there in a rainbow?",
+    "correct_answer": "7",
+    "incorrect_answers": ["8", "9", "10"]
+  },
+  {
+    "question": "What is the nickname of the US state of California?",
+    "correct_answer": "Golden State",
+    "incorrect_answers": ["Sunshine State", "Bay State", "Treasure State"]
+  },
+  {
+    "question": "Five dollars is worth how many nickles?",
+    "correct_answer": "100",
+    "incorrect_answers": ["50", "25", "69"]
+  },
+  {
+    "question": "What is the name of Poland in Polish?",
+    "correct_answer": "Polska",
+    "incorrect_answers": ["Pupcia", "Polszka", "Poacuteland"]
+  },
+  {
+    "question": "What was the first ever London Underground line to be built?",
+    "correct_answer": "Metropolitan Line",
+    "incorrect_answers": ["Circle Line", "Bakerloo Line", "Victoria Line"]
+  },
+  {
+    "question": "How tall is the Burj Khalifa?",
+    "correct_answer": "2,722 ft",
+    "incorrect_answers": ["2,717 ft", "2,546 ft", "3,024 ft"]
+  },
+  {
+    "question": "What zodiac sign is represented by a pair of scales?",
+    "correct_answer": "Libra",
+    "incorrect_answers": ["Aries", "Capricorn", "Sagittarius"]
+  },
+  {
+    "question": "If you are caught 'Goldbricking', what are you doing wrong?",
+    "correct_answer": "Slacking",
+    "incorrect_answers": ["Smoking", "Stealing", "Cheating"]
+  },
+  {
+    "question": "The Flag of the European Union has how many stars on it?",
+    "correct_answer": "12",
+    "incorrect_answers": ["10", "14", "16"]
+  }
+]
