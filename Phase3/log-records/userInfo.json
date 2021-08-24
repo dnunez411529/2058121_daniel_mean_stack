@@ -22,5 +22,13 @@
     "email": "aKei@yahoo.com",
     "date": "Mon Aug 23 2021",
     "time": "8/23/2021"
+  },
+  {
+    "fname": "Daniel",
+    "lname": "[A",
+    "gender": "Male",
+    "email": "email@email.com",
+    "date": "Mon Aug 23 2021",
+    "time": "8/23/2021"
   }
 ]
