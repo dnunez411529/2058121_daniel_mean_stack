@@ -1,0 +1,26 @@
+[
+  {
+    "fname": "John",
+    "lname": "Smith",
+    "gender": "Male",
+    "email": "jsmith11@gmail.com",
+    "date": "Mon Aug 23 2021",
+    "time": "8/23/2021"
+  },
+  {
+    "fname": "Daniel",
+    "lname": "Nunez",
+    "gender": "Male",
+    "email": "dnunez4@uci.edu",
+    "date": "Mon Aug 23 2021",
+    "time": "8/23/2021"
+  },
+  {
+    "fname": "Albert",
+    "lname": "Kei",
+    "gender": "Male",
+    "email": "aKei@yahoo.com",
+    "date": "Mon Aug 23 2021",
+    "time": "8/23/2021"
+  }
+]
