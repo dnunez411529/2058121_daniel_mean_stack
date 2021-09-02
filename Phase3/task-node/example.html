@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    label, input{
+      margin-bottom: 5px;
+    }
+    input[type="submit"] {
+      background-color: green;
+      color: white;
+    }
+    .display-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    button {
+      width: 100px;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="main" style="display: flex; flex-direction: column; align-items: center; ">
+    <h2>Task Planner</h2>
+    <div class="add-container">
+      <h3>Add Task</h3>
+      <form action="addTask" style="display: flex; flex-direction: column">
+        <label for="empID">Employee ID: </label>
+        <input type="text" name="empID" id="empID">
+        <label for="taskID">Task ID: </label>
+        <input type="text" name="taskID" id="taskID">
+        <label for="task">Task: </label>
+        <textarea name="task" id="task" cols="30" rows="10"></textarea>
+        <label for="deadline">Deadline: </label>
+        <input type="text" name="deadline" id="deadline"> 
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+      </form>
+    </div>
+    <div class="delete-container">
+      <h3>Delete Task</h3>
+      <form action="deleteTask">
+        <label for="taskID">Task ID: </label>
+        <input type="text" name="taskID" id="deleteID">
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    <div class="display-container">
+      <h3>List Task</h3>
+      <button onclick="display()">Display Tasks</button>
+      <table id="display-table">
+        <tr>
+          <th>Employee ID</th>
+          <th>Task ID</th>
+          <th>Task</th>
+          <th>Deadline</th>
+        </tr>
+      </table>
+    </div>
+  </div>
+  
+  
+</body>
+</html>
