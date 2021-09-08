@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+      integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+      crossorigin="anonymous"
+    />
+    <title>Add Course</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <h3>Add Course</h3>
+      <div class="link-container">
+        <form action="api/course/addCourse" method="POST">
+          <label for="_id">Course ID:</label>
+          <input type="text" name="_id" id="_id" />
+          <label for="cname">Course Name:</label>
+          <input type="text" name="cname" id="cname" />
+          <label for="description">Description:</label>
+          <input type="text" name="description" id="description" />
+          <label for="price">Ammount:</label>
+          <input type="text" name="price" id="price" />
+          <div class="buttons-container">
+            <input type="submit" value="Add" />
+            <input type="reset" value="Reset" />
+          </div>
+        </form>
+        <br />
+        <a href="index.html">Back</a>
+      </div>
+    </div>
+  </body>
+</html>
