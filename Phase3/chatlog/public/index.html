@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="script.js"></script>
+    <title>Chatlog</title>
+</head>
+<body>
+    <div class="body-container">
+        <div class="main-container">
+            <h3>Chatlog</h3>
+            <form>
+                <label for="name">Name:</label>
+                <br>
+                <input type="text" name="name" id="name">
+                <br>
+                <label for="msg">Message:</label>
+                <br>
+                <textarea name="msg" id="msg" cols="30" rows="10" placeholder="Enter message here..."></textarea>
+                <br>
+                <input class="btn btn-success" type="button" value="Send"
+                onclick="sendMessage(document.getElementById('name').value, document.getElementById('msg').value)">
+            </form>
+            <br>
+            <div class="status-container">
+                <h5 id="status-message"></h5>
+            </div>
+        </div>      
+    </div>
+</body>
+</html>

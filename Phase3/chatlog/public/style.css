@@ -1,0 +1,18 @@
+.main-container{
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.body-container{
+    display:flex;
+    justify-content: center;
+    height: 600px;
+}
+.btn {
+   margin-top: 10px
+}
+.status-container{
+    display: flex;justify-content: center;
+    color: orange;
+    margin-top: 10px;
+}
